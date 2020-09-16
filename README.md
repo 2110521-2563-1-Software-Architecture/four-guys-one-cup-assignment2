@@ -33,6 +33,8 @@ code ที่ใช้ทำข้อนี้สามารถดูได้
 
 #### d. Etc.
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/ans_2_graph.png)
+สำหรับการทดลองนี้เป็นการมองไปที่ขนาดของ request line ที่เข้ามาว่ายิ่งมาก จะส่งผมต่อการทำงานในการรันข้อมูลใน client อย่างไร เลย(มากยิ่งดี หน่วยเป็น ops/sec) 
+
 ## 2. Discussion of the results why one method is better the other in which scenarios.
 
   a. Single client with a small call to insert a book item, a bigger call to insert a list of multiple book items.
