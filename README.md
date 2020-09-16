@@ -23,6 +23,7 @@ Software Architecture assignment 2
 
 #### b. Multiple clients with different kind of calls
 เราจะทำการ fork clientมาเรียก function โดยการสุ่ม โดยจะมีclientตั้งแต่ 1-10
+
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/scene2.png)
 
 #### c. Vary the number of concurrent calls from 1 to 4096 calls.
@@ -41,6 +42,10 @@ code ที่ใช้ทำข้อนี้สามารถดูได้
 
   #### a. Single client with a small call to insert a book item, a bigger call to insert a list of multiple book items.<br/>
   ใน scenario นี้ gRPC สามารถทำได้ดีกว่าทั้งใน smaller call และ bigger call เพราะว่า REST API ใช้ HTTP/1.1 ที่รัน streaming เป็น queue อยู่ดีทำให้ช้า ในขณะที่ gRPC ใช้ HTTP/2 และ Protobuf ซึ่งรองรับการส่งข้อมูลแบบ streaming ทำให้ gRPC มี response time ที่เร็วกว่า
+
+  #### b. Multiple clients with different kind of calls.<br/>
+  จาก assumption REST API ใช้ HTTP/1.1 ในขณะที่ gRPC ใช้ HTTP/2 โดยจาก protocol นี้ gRPC อาจจะรับข้อมูล package ที่ใหญ่ข้องข้างมาก
+  ทำให้ใน scenario นี้ REST API จะดีกว่า gRPC
 
   #### c. Vary the number of concurrent calls from 1 to 4096 calls.<br/>
   ใน scenario นี้ gRPC สามารถทำได้ดีกว่าอย่างชัดเจน เพราะว่า REST API ใช้ HTTP/1.1 ในขณะที่ gRPC ใช้ HTTP/2 ซึ่งรองรับ concurrent requests ทำให้ gRPC มี response time ที่เร็วกว่า 
