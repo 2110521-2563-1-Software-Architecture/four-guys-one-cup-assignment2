@@ -7,8 +7,6 @@ Software Architecture assignment 2
 
 6031052421 Waritphon Sriphron
 
-603015521 Wattanai Tipsathaporn
-
 ## 1. Graph showing the benchmarking results with the explanation of your experimental settings.
 
 #### a. Single client with a small call to insert a book item, a bigger call to insert a list of multiple book items.
@@ -16,6 +14,7 @@ Software Architecture assignment 2
 #### b. Multiple clients with different kind of calls
 
 #### c. Vary the number of concurrent calls from 1 to 4096 calls.
+![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/List%20Concurrently.png)
 
 #### d. Etc.
 
