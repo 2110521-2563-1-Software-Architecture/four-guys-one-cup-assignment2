@@ -43,6 +43,8 @@ REST API และ gRPC ล้วนสามารถทำงานข้า�
 
 #### Ease of Use
 
+rest api นั้นถูกนำมาใช้งานกันอย่างแพร่หลาย แต่ว่าการเขียนโค้ดนั้น ตัว gRPC ทำได้ง่ายกว่า และเขียนสั้นกว่า REST API
+
 #### Performance
 
 As you can see from the graph in first section, gRPC's performance is better than REST API in term of response time. Futhermore, gRPC uses HTTP/2 which supports concurrent calls, while REST API uses HTTP/1.1 which doesn't support.
