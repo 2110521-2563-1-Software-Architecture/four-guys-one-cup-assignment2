@@ -1,0 +1,33 @@
+{
+  "name": "grpc-vs-rest-benchmark",
+  "version": "1.0.0",
+  "description": "A NodeJS benchmark comparing gRPC server against an Express server",
+  "main": "src",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:rest": "PORT=3000 node src/rest-server.js",
+    "start:grpc-server": "PORT=8080 node src/grpc-server.js",
+    "start:grpc-client": "PORT=8080 node src/grpc-client.js",
+    "bench": "node ./benchmark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shobhitchittora/grpc-vs-rest-benchmark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shobhitchittora/grpc-vs-rest-benchmark/issues"
+  },
+  "homepage": "https://github.com/shobhitchittora/grpc-vs-rest-benchmark#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.1.0",
+    "benchmark": "^2.1.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "grpc": "^1.24.3",
+    "microtime": "^3.0.0"
+  }
+}
