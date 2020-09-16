@@ -4,6 +4,7 @@ Software Architecture assignment 2
 ### Members
 
 6030200821 Nuttanai Kijviwattanakarn
+
 6031052421 Waritphon Sriphron
 
 ## 1. Graph showing the benchmarking results with the explanation of your experimental settings.
