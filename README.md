@@ -24,7 +24,7 @@ Software Architecture assignment 2
 #### b. Multiple clients with different kind of calls
 เราจะทำการ fork clientมาเรียก function โดยการสุ่ม โดยจะมีclientตั้งแต่ 1-10
 
-![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/scnen2.png)
+![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/scene2.png)
 
 #### c. Vary the number of concurrent calls from 1 to 4096 calls.
 เราทำการเรียก listBooks ไปเรื่อยๆ n ครั้ง แบบไม่ต้องรอให้ตัวก่อนหน้าเสร็จ โดย n เป็น [1,2,4,8,16,32,64,128,256,512,1024,2048,4096] จากนั้นดูเวลาที่ใช้ในการเรียกทั้งหมดตั้งแต่ครั้งที่ 1 ถึง n
