@@ -38,6 +38,8 @@ code ที่ใช้ทำข้อนี้สามารถดูได้
 ## 3. Comparison of the gRPC and REST API from the aspects of language neutral, ease of use, and performance.
 
 #### Language Neutral
+  
+REST API และ gRPC ล้วนสามารถทำงานข้ามภาษาได้ทั้งคู่ กล่าวคือมีความเป็น language neutral ทั้ง 2 approach แต่ปัจจุบัน RESTAPI สามารถรองรับภาษาได้หลากหลายกว่า gRPC อยู่และมี community ใหญ่กว่ามากทำให้ได้รับความนิยมมากกว่า gRPC
 
 #### Ease of Use
 
