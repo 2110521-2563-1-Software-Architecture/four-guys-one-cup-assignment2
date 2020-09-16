@@ -5,9 +5,11 @@ Software Architecture assignment 2
 
 6030200821 Nuttanai Kijviwattanakarn
 
-6031052421 Waritphon Sriphron
+6031052421 Waritphon Sriphrom
 
 6030515521 Wattanai Tipsathaporn
+
+6030285121 Time Yongyai
 
 ## 1. Graph showing the benchmarking results with the explanation of your experimental settings.
 
