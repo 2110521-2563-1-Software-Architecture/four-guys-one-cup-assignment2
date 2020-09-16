@@ -12,9 +12,9 @@ Software Architecture assignment 2
 ## 1. Graph showing the benchmarking results with the explanation of your experimental settings.
 
 #### a. Single client with a small call to insert a book item, a bigger call to insert a list of multiple book items.
-เราทำการเรียก insert book เป็นชุด 5 ชุด โดยแต่ละชุดจะยิงเป็นชุดละ [10, 100, 1000, 10000, 20000, 30000, 40000, 50000] แบบไม่ต้องรอให้ตัวก่อนหน้าเสร็จ แล้วสังเกตเวลาที่ใช้ไปต่อ 1 request ของแต่ละชุดการยิง
+เราทำการเรียก insert book เป็นชุด 5 ชุด โดยแต่ละชุดจะยิงเป็นชุดละ [10, 100, 1000, 10000, 20000, 30000, 40000, 50000] แบบรอให้ตัวก่อนหน้าเสร็จ แล้วสังเกตเวลาที่ใช้ไปต่อ 1 request ของแต่ละชุดการยิง
 
-![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/chart-a.png)
+![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/chart-a-new.png)
 
 โดยจากกราฟจะเห็นได้ว่า gRPC นั้นเร็วกว่า RESTAPI อย่างมาก code ที่ใช้ทำข้อนี้สามารถดูได้ใน [gRPC/answer_a.js](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/gRPC/answer_a.js) และ [RESTAPI/answer_a.js](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/RESTAPI/answer_a.js) 
 
@@ -32,6 +32,9 @@ code ที่ใช้ทำข้อนี้สามารถดูได้
 #### d. Etc.
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/ans_2_graph.png)
 ## 2. Discussion of the results why one method is better the other in which scenarios.
+
+  a. Single client with a small call to insert a book item, a bigger call to insert a list of multiple book items.
+  ใน scenario นี้ gRPC สามารถทำได้ดีกว่าทั้งใน smaller call และ bigger call เพราะว่า REST API ใช้ HTTP/1.1 ในขณะที่ gRPC ใช้ HTTP/2 และ Protobuf ซึ่งรองรับการส่งข้อมูลแบบ streaming ทำให้ gRPC มี response time ที่เร็วกว่า
 
   c. Vary the number of concurrent calls from 1 to 4096 calls.
   ใน scenario นี้ gRPC สามารถทำได้ดีกว่าอย่างชัดเจน เพราะว่า REST API ใช้ HTTP/1.1 ในขณะที่ gRPC ใช้ HTTP/2 ซึ่งรองรับ concurrent requests ทำให้ gRPC มี response time ที่เร็วกว่า 
