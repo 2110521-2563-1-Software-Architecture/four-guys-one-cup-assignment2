@@ -33,6 +33,8 @@ code ที่ใช้ทำข้อนี้สามารถดูได้
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/ans_2_graph.png)
 ## 2. Discussion of the results why one method is better the other in which scenarios.
 
+  4. etc
+  มาจาก assumption ที่ว่า http 1.0 กับ html 2.0 ขนาดของ package นั้นมีผลอย่างไร จะเห็นว่า gRPC นั้นทำได้ดีกว่าในการจัดการกับ request ที่มีขนาดใหญ่มากๆ อย่าง ตั้งแต่ 25 request line ขึ้นไป 
 ## 3. Comparison of the gRPC and REST API from the aspects of language neutral, ease of use, and performance.
 
 #### Language Neutral
@@ -44,3 +46,8 @@ code ที่ใช้ทำข้อนี้สามารถดูได้
 As you can see from the graph in first section, gRPC's performance is better than REST API in term of response time. Futhermore, gRPC uses HTTP/2 which supports concurrent calls, while REST API uses HTTP/1.1 which doesn't support.
 
 ## 4. Does your results comply with the results in https://medium.com/@bimeshde/grpc-vs-rest-performance-simplifiedfd35d01bbd4? How?
+
+4. ผลลัพธ์นั้นเป็นไปตามการทำงานในหัวข้อของการรับ request ตามกราฟ 
+![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/ans_2_etc.png)
+ซึ่งสอดคล้องกับข้อ 1 ในการจัดการกับ request ที่เมื่อเราเพิ่มขนาดไฟล์ของ request มากขึ้นการส่งข้อมูลก็จะช้าลงอย่างเห็นได้ชัดสำหรับ REST API
+
