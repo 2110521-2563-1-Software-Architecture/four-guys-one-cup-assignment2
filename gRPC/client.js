@@ -18,9 +18,9 @@ function listBooks() {
   });
 }
 
-function insertBook(id, title, author) {
+async function insertBook(id, title, author) {
   var book = { id: parseInt(id), title: title, author: author };
-  client.insert(book, function(error, empty) {
+  await client.insert(book, function(error, empty) {
     printResponse(error, empty);
   });
 }
@@ -42,37 +42,6 @@ function watchBooks() {
   call.on('data', function(book) {
     console.log(book);
   });
-}
-
-function test1(){
-
-  var testSet = [1, 10000, 20000, 30000, 40000, 50000]
-
-  var result = {}
-
-  testSet.forEach(amount => {
-      var books = Array.from({length: amount}, (_, i) => {
-          return {
-              id: i,
-              title: 'A Tale of Two Cities',
-              author: 'Charles Dickens'
-          }
-      })
-
-      let start = Date.now()
-
-      for(let i = 0; i<books.length ; i++){
-          var {id, title, author} = books[i]
-          insertBook(id, title, author)
-      }
-
-      let end = Date.now()
-
-      result[amount] = (end-start)/amount
-
-  })
-
-  console.log(result)
 }
 
 var processName = process.argv.shift();

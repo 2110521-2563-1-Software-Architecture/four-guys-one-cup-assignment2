@@ -39,40 +39,6 @@ const deleteBook = async (id) => {
     }
 };
 
-const testInsert = (id, title, author) => 
-    new Promise(resolve => resolve(insertBook(id, title, author)));
-
-const batchInsert = async arguments => {
-    let start = Date.now()
-
-    for (const item of arguments){
-        await testInsert(item);
-    }
-    let end = Date.now()
-
-    console.log(arguments.length ,(end-start)/arguments.length)
-}
-
-function test1(){
-
-    var testSet = [100000, 200000, 300000, 400000, 500000]
-
-    // var result = {}
-
-    testSet.forEach(amount => {
-        var books = Array.from({length: amount}, (_, i) => {
-            return {
-                id: i,
-                title: 'A Tale of Two Cities',
-                author: 'Charles Dickens'
-            }
-        })
-
-        batchInsert(books)
-
-    })
-}
-
 var processName = process.argv.shift();
 var scriptName = process.argv.shift();
 var command = process.argv.shift();
@@ -85,6 +51,14 @@ if (command == 'list') {
     getBook(process.argv[0]);
 } else if (command == 'delete') {
     deleteBook(process.argv[0]);
+<<<<<<< HEAD
 } else if (command == 'test') {
     test1()
 } 
+||||||| merged common ancestors
+} else if (command == 'test') {
+    test1()
+}
+=======
+}
+>>>>>>> 0abc12d09f1937c980c6ff9e92222452a7ca0ab1

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package grettings_package;
+
+service Greeting {
+  rpc greetDefault (Empty) returns (Greet) {}
+  rpc greetDefault5 (Empty) returns (Greet) {}
+  rpc greetDefault25 (Empty) returns (Greet) {}
+  rpc greetDefault100 (Empty) returns (Greet) {}
+  rpc greetDefault500 (Empty) returns (Greet) {}
+  rpc greetDefault1000 (Empty) returns (Greet) {}
+  rpc greetDefault5000 (Empty) returns (Greet) {}
+  rpc greetDefault10000 (Empty) returns (Greet) {}
+  rpc greetName (Name) returns (Greet) {}
+}
+
+message Empty {
+
+}
+
+message Greet {
+  string message = 1;
+}
+
+message Name{
+  string name = 1;
+}
