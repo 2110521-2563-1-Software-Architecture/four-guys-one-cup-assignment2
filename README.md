@@ -27,4 +27,10 @@ code ที่ใช้ทำข้อนี้สามารถดูได้
 
 ## 3. Comparison of the gRPC and REST API from the aspects of language neutral, ease of use, and performance.
 
+#### Language Neutral
+
+#### Ease of Use
+
+#### Performance
+
 ## 4. Does your results comply with the results in https://medium.com/@bimeshde/grpc-vs-rest-performance-simplifiedfd35d01bbd4? How?
