@@ -17,7 +17,7 @@ Software Architecture assignment 2
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/List%20Concurrently.png)
 
 #### d. Etc.
-
+![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/ans_2_graph.png)
 ## 2. Discussion of the results why one method is better the other in which scenarios.
 
 ## 3. Comparison of the gRPC and REST API from the aspects of language neutral, ease of use, and performance.
