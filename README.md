@@ -23,6 +23,7 @@ Software Architecture assignment 2
 
 #### b. Multiple clients with different kind of calls
 เราจะทำการ fork clientมาเรียก function โดยการสุ่ม โดยจะมีclientตั้งแต่ 1-10
+
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/scnen2.png)
 
 #### c. Vary the number of concurrent calls from 1 to 4096 calls.
