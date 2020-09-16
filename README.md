@@ -7,6 +7,8 @@ Software Architecture assignment 2
 
 6031052421 Waritphon Sriphron
 
+603015521 Wattanai Tipsathaporn
+
 ## 1. Graph showing the benchmarking results with the explanation of your experimental settings.
 
 #### a. Single client with a small call to insert a book item, a bigger call to insert a list of multiple book items.
