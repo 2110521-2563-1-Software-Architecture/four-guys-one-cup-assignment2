@@ -25,7 +25,7 @@ const batchInsert = async arguments => {
 
 function test1(){
 
-    var testSet = [10000, 20000, 30000, 40000, 50000]
+    var testSet = [1, 10, 100 , 1000, 10000, 20000, 30000, 40000, 50000]
 
     // var result = {}
 
@@ -43,6 +43,8 @@ function test1(){
     })
 }
 
+var processName = process.argv.shift();
+var scriptName = process.argv.shift();
 var command = process.argv.shift();
 
 if (command == 'test') {

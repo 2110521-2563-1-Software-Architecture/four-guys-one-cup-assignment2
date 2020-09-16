@@ -5,14 +5,6 @@ var booksProto = grpc.load('books.proto');
 var client = new booksProto.books.BookService('127.0.0.1:50051', 
   grpc.credentials.createInsecure());
 
-client.list({}, function(error, books) {
-  if (error)
-    console.log('Error: ', error);
-  else
-    console.log(books);
-});
-
-
 function printResponse(error, response) {
     if (error)
       console.log('Error: ', error);
@@ -42,7 +34,7 @@ const batchInsert = async arguments => {
 
 function test1(){
 
-    var testSet = [10000, 20000, 30000, 40000, 50000]
+    var testSet = [1, 10, 100 , 1000, 10000, 20000, 30000, 40000, 50000]
 
     // var result = {}
 
@@ -60,6 +52,9 @@ function test1(){
     })
 }
 
+
+var processName = process.argv.shift();
+var scriptName = process.argv.shift();
 var command = process.argv.shift();
 
 if (command == 'test') {
