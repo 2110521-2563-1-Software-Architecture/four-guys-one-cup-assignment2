@@ -14,7 +14,12 @@ Software Architecture assignment 2
 #### b. Multiple clients with different kind of calls
 
 #### c. Vary the number of concurrent calls from 1 to 4096 calls.
+เราทำการเรียก listBooks ไปเรื่อยๆ n ครั้ง แบบไม่ต้องรอให้ตัวก่อนหน้าเสร็จ โดย n เป็น [1,2,4,8,16,32,64,128,256,512,1024,2048,4096] จากนั้นดูเวลาที่ใช้ในการเรียกทั้งหมดตั้งแต่ครั้งที่ 1 ถึง n
+
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/List%20Concurrently.png)
+
+โดยจากกราฟจะเห็นได้ว่า gRPC นั้นเร็วกว่า RESTAPI
+code ที่ใช้ทำข้อนี้สามารถดูได้ใน [gRPC/answer_c.js](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/gRPC/answer_c.js) และ [RESTAPI/answer_c.js](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/RESTAPI/answer_c.js) 
 
 #### d. Etc.
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/ans_2_graph.png)
