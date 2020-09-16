@@ -55,7 +55,5 @@ As you can see from the graph in first section, gRPC's performance is better tha
 
 ## 4. Does your results comply with the results in https://medium.com/@bimeshde/grpc-vs-rest-performance-simplifiedfd35d01bbd4? How?
 
-4. ผลลัพธ์นั้นเป็นไปตามการทำงานในหัวข้อของการรับ request ตามกราฟ 
-![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/ans_2_etc.png)
-ซึ่งสอดคล้องกับข้อ 1 ในการจัดการกับ request ที่เมื่อเราเพิ่มขนาดไฟล์ของ request มากขึ้นการส่งข้อมูลก็จะช้าลงอย่างเห็นได้ชัดสำหรับ REST API
+จากผลลัพธ์ที่กลุ่มเราทำ เราพบว่าผลลัพธ์นั้นออกมาไปในทิศทางเดียวกัน คือ ตัว performance โดยรวมของ gRPC นั้นดีกว่า REST API และ มี Ease of Use ที่ดีกว่า เขียนโค้ดสั้นกว่า
 
