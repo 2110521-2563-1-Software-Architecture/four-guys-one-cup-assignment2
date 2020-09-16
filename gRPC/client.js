@@ -52,6 +52,37 @@ function watchBooks() {
   });
 }
 
+function test1(){
+
+  var testSet = [1, 10000, 20000, 30000, 40000, 50000]
+
+  var result = {}
+
+  testSet.forEach(amount => {
+      var books = Array.from({length: amount}, (_, i) => {
+          return {
+              id: i,
+              title: 'A Tale of Two Cities',
+              author: 'Charles Dickens'
+          }
+      })
+
+      let start = Date.now()
+
+      for(let i = 0; i<books.length ; i++){
+          var {id, title, author} = books[i]
+          insertBook(id, title, author)
+      }
+
+      let end = Date.now()
+
+      result[amount] = (end-start)/amount
+
+  })
+
+  console.log(result)
+}
+
 var processName = process.argv.shift();
 var scriptName = process.argv.shift();
 var command = process.argv.shift();
@@ -66,4 +97,6 @@ else if (command == 'delete')
   deleteBook(process.argv[0]);
 else if (command == 'watch')
   watchBooks();
+else if (command == 'test')
+  test1()
 
