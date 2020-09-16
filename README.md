@@ -10,6 +10,9 @@ Software Architecture assignment 2
 ## 1. Graph showing the benchmarking results with the explanation of your experimental settings.
 
 #### a. Single client with a small call to insert a book item, a bigger call to insert a list of multiple book items.
+เราทำการเรียก insert book เป็นชุด 5 ชุด โดยแต่ละชุดจะยิงเป็นชุดละ [10000, 20000, 30000, 40000, 50000] แบบไม่ต้องรอให้ตัวก่อนหน้าเสร็จ แล้วสังเกตเวลาที่ใช้ไปต่อ 1 request ของแต่ละชุดการยิง
+
+![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/chart-a.png)
 
 #### b. Multiple clients with different kind of calls
 
