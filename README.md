@@ -33,7 +33,11 @@ code ที่ใช้ทำข้อนี้สามารถดูได้
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/ans_2_graph.png)
 ## 2. Discussion of the results why one method is better the other in which scenarios.
 
-  4. etc
+  c. Vary the number of concurrent calls from 1 to 4096 calls.
+  ใน scenario นี้ gRPC สามารถทำได้ดีกว่าอย่างชัดเจน เพราะว่า REST API ใช้ HTTP/1.1 ในขณะที่ gRPC ใช้ HTTP/2 ซึ่งรองรับ concurrent requests ทำให้ gRPC มี response time ที่เร็วกว่า 
+
+
+  d. etc
   มาจาก assumption ที่ว่า http 1.0 กับ html 2.0 ขนาดของ package นั้นมีผลอย่างไร จะเห็นว่า gRPC นั้นทำได้ดีกว่าในการจัดการกับ request ที่มีขนาดใหญ่มากๆ อย่าง ตั้งแต่ 25 request line ขึ้นไป 
 ## 3. Comparison of the gRPC and REST API from the aspects of language neutral, ease of use, and performance.
 
@@ -42,6 +46,8 @@ code ที่ใช้ทำข้อนี้สามารถดูได้
 REST API และ gRPC ล้วนสามารถทำงานข้ามภาษาได้ทั้งคู่ กล่าวคือมีความเป็น language neutral ทั้ง 2 approach แต่ปัจจุบัน RESTAPI สามารถรองรับภาษาได้หลากหลายกว่า gRPC อยู่และมี community ใหญ่กว่ามากทำให้ได้รับความนิยมมากกว่า gRPC
 
 #### Ease of Use
+
+rest api นั้นถูกนำมาใช้งานกันอย่างแพร่หลาย แต่ว่าการเขียนโค้ดนั้น ตัว gRPC ทำได้ง่ายกว่า และเขียนสั้นกว่า REST API
 
 #### Performance
 
