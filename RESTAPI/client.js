@@ -39,11 +39,25 @@ const deleteBook = async (id) => {
     }
 };
 
+const testInsert = (id, title, author) => 
+    new Promise(resolve => resolve(insertBook(id, title, author)));
+
+const batchInsert = async arguments => {
+    let start = Date.now()
+
+    for (const item of arguments){
+        await testInsert(item);
+    }
+    let end = Date.now()
+
+    console.log(arguments.length ,(end-start)/arguments.length)
+}
+
 function test1(){
 
     var testSet = [100000, 200000, 300000, 400000, 500000]
 
-    var result = {}
+    // var result = {}
 
     testSet.forEach(amount => {
         var books = Array.from({length: amount}, (_, i) => {
@@ -54,20 +68,9 @@ function test1(){
             }
         })
 
-        let start = Date.now()
-
-        for(let i = 0; i<books.length ; i++){
-            var {id, title, author} = books[i]
-            insertBook(id, title, author)
-        }
-
-        let end = Date.now()
-
-        result[amount] = (end-start)/amount
+        batchInsert(books)
 
     })
-
-    console.log(result)
 }
 
 var processName = process.argv.shift();
