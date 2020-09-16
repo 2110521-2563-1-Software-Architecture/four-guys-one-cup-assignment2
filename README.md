@@ -16,7 +16,8 @@ Software Architecture assignment 2
 
 ![alt text](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/resources/chart-a.png)
 
-โดยจากกราฟจะเห็นได้ว่า gRPC นั้นเร็วกว่า RESTAPI อย่างมาก code ที่ใช้ทำข้อนี้สามารถดูได้ใน gRPC/answer_a.js และ RESTAPI/answer_a.js
+โดยจากกราฟจะเห็นได้ว่า gRPC นั้นเร็วกว่า RESTAPI อย่างมาก code ที่ใช้ทำข้อนี้สามารถดูได้ใน [gRPC/answer_a.js](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/gRPC/answer_a.js) และ [RESTAPI/answer_a.js](https://github.com/2110521-2563-1-Software-Architecture/four-guys-one-cup-assignment2/blob/master/RESTAPI/answer_a.js) 
+
 
 #### b. Multiple clients with different kind of calls
 
